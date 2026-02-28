@@ -19,4 +19,7 @@ for(i=0;B[i]!='\0';i++)
 break;
 }
 }
+
+if(B[i]=='\0')
+printf("anagram\n");
 }
