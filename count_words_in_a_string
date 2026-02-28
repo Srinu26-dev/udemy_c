@@ -1,0 +1,17 @@
+//How are you
+//How space are space space space you
+
+#include<stdio.h>
+int main()
+{
+  char A[]="How are you";
+int i=0,word=0;
+
+for(i=0;A[i]!='\0';i++)
+{
+   if(A[i]==' ' && A[i-1]!=' ')
+     word++;
+}
+
+printf("word count = %d\n",word +1);
+}
