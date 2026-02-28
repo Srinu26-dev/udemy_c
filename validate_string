@@ -1,0 +1,28 @@
+#include<stdio.h>
+int check(char *);
+int main()
+{
+char *p="Anil321";
+
+int valid=0;
+
+valid=check(p);
+if(valid)
+{
+  printf("valid string %s\n",p);
+}
+else
+{
+  printf("invalid string%s\n",p);
+}
+}
+int check(char *A)
+{
+ int i=0;
+for(i=0;A[i]!='\0';i++)
+{
+  if(!(A[i]>='A' && A[i]<='Z') && !(A[i]>='a' && A[i]<='z') && !(A[i]>='0' && A[i]<='9'))
+     return 0;
+}
+return 1;
+}
